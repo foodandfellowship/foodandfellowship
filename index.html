@@ -1,201 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food and Fellowship | Zephyrhills Community Outreach</title>
 
-<title>Food and Fellowship | Zephyrhills Community Outreach</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style.button-link>{
-display:inline-block;
-background:#2f6b2f;
-color:white;
-padding:12px 20px;
-border-radius:5px;
-font-size:16px;
-text-decoration:none;
-margin-top:10px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
 
-.button-link:hover{
-background:#245224;
-}
+    header {
+      background: #2f6b2f;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
 
-body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f4f4;
-}
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.4rem;
+    }
 
-header{
-background:#2f6b2f;
-color:white;
-padding:30px;
-text-align:center;
-}
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
 
-section{
-max-width:900px;
-margin:auto;
-background:white;
-padding:30px;
-margin-top:20px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-h2{
-color:#2f6b2f;
-}
+    section {
+      background: white;
+      margin: 20px 0;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
 
-button{
-background:#2f6b2f;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:5px;
-font-size:16px;
-cursor:pointer;
-}
+    h2 {
+      color: #2f6b2f;
+      margin-top: 0;
+    }
 
-footer{
-text-align:center;
-padding:20px;
-color:#666;
-font-size:14px;
-}
+    p {
+      margin: 0 0 15px;
+    }
 
-</style>
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
 
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .button-link {
+      display: inline-block;
+      background: #2f6b2f;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .button-link:hover {
+      background: #245224;
+    }
+
+    .contact-info a,
+    footer a,
+    .map-note a {
+      color: #2f6b2f;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover,
+    footer a:hover,
+    .map-note a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+      background: #ddd;
+    }
+
+    .map-wrap {
+      margin-top: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      display: block;
+    }
+
+    .hours-box {
+      background: #f0f7f0;
+      border-left: 5px solid #2f6b2f;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      padding: 30px 20px 40px;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 22px;
+      }
+
+      .map-wrap iframe {
+        height: 300px;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
+  <header>
+    <h1>Food and Fellowship</h1>
+    <p>Serving the Zephyrhills community since 2016</p>
+  </header>
 
-<h1>Food and Fellowship</h1>
-<p>Serving the Zephyrhills Community Since 2016</p>
+  <div class="container">
 
-</header>
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        Food and Fellowship is a grassroots community outreach serving individuals and families in need in Zephyrhills, Florida.
+        Through meals, fellowship, and encouragement, we create a welcoming place where people can gather, be seen, and know they are not alone.
+      </p>
+      <div class="button-row">
+        <a class="button-link" href="mailto:foodandfellowship@yahoo.com?subject=Volunteer%20with%20Food%20and%20Fellowship">Volunteer With Us</a>
+        <a class="button-link" href="mailto:foodandfellowship@yahoo.com?subject=Sponsor%20a%20Community%20Meal">Sponsor a Meal</a>
+      </div>
+    </section>
 
-<section>
+    <section>
+      <h2>Our Impact in Zephyrhills</h2>
+      <p>
+        Since 2016, Food and Fellowship has continued to serve neighbors in need through consistent meal outreach and community support.
+      </p>
+      <ul>
+        <li><strong>Serving the community since 2016</strong></li>
+        <li><strong>Over 10,000 hours of community service</strong></li>
+        <li><strong>Thousands of meals shared with neighbors in need</strong></li>
+        <li><strong>Expanded outreach during COVID, serving six days per week</strong></li>
+        <li><strong>Continuing weekly meals every Sunday at Shepard’s Park</strong></li>
+      </ul>
+      <p>
+        Our mission is simple: share food, build relationships, and remind people that hope still has a place in this community.
+      </p>
+    </section>
 
-<h2>Our Mission</h2>
+    <section>
+      <h2>Sunday Community Meal</h2>
+      <p>
+        Everyone is welcome to join us for a weekly community meal and time of fellowship.
+      </p>
 
-<p>
-Food and Fellowship is a grassroots outreach dedicated to serving individuals and families in need in the Zephyrhills community. Through weekly meals and fellowship, we provide food, encouragement, and connection for those experiencing hardship.
-</p>
+      <div class="hours-box">
+        <strong>Location:</strong> Shepard’s Park, Zephyrhills, Florida<br />
+        <strong>Day:</strong> Every Sunday<br />
+        <strong>Time:</strong> 3:00 PM – 5:00 PM
+      </div>
 
-</section>
+      <div class="button-row">
+        <a class="button-link" href="tel:8133128103">Call Us</a>
+        <a class="button-link" href="mailto:foodandfellowship@yahoo.com">Email Us</a>
+      </div>
+    </section>
 
-<section>
+    <section>
+      <h2>Find Us at Shepard’s Park</h2>
+      <p>
+        We serve our weekly community meal at Shepard’s Park in Zephyrhills.
+      </p>
 
-<h2>Sunday Community Meal</h2>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Shepard's%20Park%20Zephyrhills%20FL&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
-<p>
+      <p class="map-note" style="margin-top: 12px;">
+        Need directions? You can also search for
+        <strong>Shepard’s Park, Zephyrhills, FL</strong>
+        in Google Maps.
+      </p>
+    </section>
 
-Location: Shepard's Park – Zephyrhills, Florida<br>
-Time: Sunday 3:00 PM – 5:00 PM
+    <section>
+      <h2>Photos from the Outreach</h2>
+      <p>
+        These are moments from Food and Fellowship serving the community in Zephyrhills.
+      </p>
 
-</p>
+      <div class="gallery">
+        <img src="images/shepards-park-1.jpg" alt="Food and Fellowship outreach at Shepard's Park" />
+        <img src="images/meal-serving.jpg" alt="Volunteers serving food" />
+        <img src="images/community-table.jpg" alt="Community meal gathering" />
+      </div>
+    </section>
 
-<p>
-Everyone is welcome. Our goal is simple — share food, build relationships, and support one another.
-</p>
+    <section>
+      <h2>Contact Food and Fellowship</h2>
+      <p>
+        We welcome volunteers, community partners, churches, food donations, and sponsors.
+        If you would like to help support the outreach, please reach out.
+      </p>
 
-</section>
+      <p class="contact-info">
+        <strong>Phone:</strong>
+        <a href="tel:8133128103">813-312-8103</a>
+        <br /><br />
+        <strong>Email:</strong>
+        <a href="mailto:foodandfellowship@yahoo.com">foodandfellowship@yahoo.com</a>
+      </p>
 
-<section>
-<section>
+      <div class="button-row">
+        <a class="button-link" href="mailto:foodandfellowship@yahoo.com?subject=Sponsor%20a%20Community%20Meal">Sponsor a Community Meal</a>
+        <a class="button-link" href="mailto:foodandfellowship@yahoo.com?subject=Volunteer%20for%20Sunday%20Meal">Join as a Volunteer</a>
+      </div>
+    </section>
 
-<h2>Our Impact in Zephyrhills</h2>
+  </div>
 
-<p>
-Since 2016, Food and Fellowship has been serving the Zephyrhills community by providing meals and fellowship for individuals and families facing hardship.
-</p>
-
-<ul>
-
-<li><strong>Serving the community since 2016</strong></li>
-
-<li><strong>Over 10,000 hours of community service</strong></li>
-
-<li><strong>Thousands of meals shared with neighbors in need</strong></li>
-
-<li><strong>Expanded outreach during COVID serving six days per week</strong></li>
-
-<li><strong>Weekly community meals every Sunday at Shepard’s Park</strong></li>
-
-</ul>
-
-<p>
-Our mission is simple: bring people together, share a meal, and remind those who are struggling that they are not alone.
-</p>
-
-</section>
-  
-<h2>Volunteer</h2>
-
-<p>
-We are always looking for volunteers who want to help serve the community.
-</p>
-
-<p>
-Message us through Facebook or come visit during our Sunday meal outreach.
-</p>
-
-</section>
-
-<section>
-
-<section>
-
-<h2>Contact Food and Fellowship</h2>
-
-<p>
-We welcome volunteers, donations, and community partnerships.  
-If you would like to help support the outreach or sponsor a meal, please contact us.
-</p>
-
-<p>
-
-<strong>Phone:</strong>  
-<a href="tel:8133128103">813-312-8103</a>
-
-<br><br>
-
-<strong>Email:</strong>  
-<a href="mailto:foodandfellowship@yahoo.com">foodandfellowship@yahoo.com</a>
-
-</p>
-
-<p>
-
-<a href="mailto:foodandfellowship@yahoo.com?subject=Sponsor%20a%20Meal" class="button-link">
-Sponsor a Community Meal
-</a>
-
-</p>
-
-</section>
-
-<p>
-Donations help us purchase food, supplies, and materials needed to serve meals every week.
-</p>
-
-<button>Contact Us to Sponsor a Meal</button>
-
-</section>
-
-<footer>
-
-<p>Food and Fellowship | Zephyrhills Florida</p>
-
-<p><a href="privacy-policy.html">Privacy Policy</a></p>
-
-</footer>
+  <footer>
+    <p><strong>Food and Fellowship</strong> | Zephyrhills, Florida</p>
+    <p>
+      <a href="privacy-policy.html">Privacy Policy</a> |
+      <a href="impressum.html">Impressum</a>
+    </p>
+  </footer>
 
 </body>
 </html>
-<a href="privacy-policy.html">Privacy Policy</a> |
-<a href="impressum.html">Impressum</a>
